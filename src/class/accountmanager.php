@@ -1,5 +1,5 @@
 <?php
-include '../databais/conn.php';
+include_once '../databais/conn.php';
 include_once(__DIR__ . '/account.php');
 
 class AccountManager {
@@ -47,48 +47,8 @@ class AccountManager {
 
 
 
-
-            // switch ($this->accountType) {
-            //                 case 'savings':
-            //                     $sql = "INSERT INTO `savingsaccount` (`customer_id`, `interest_rate`, `minimum_balance`) VALUES (:id, :interest_rate, :minimum_balance)";
-            //                     $stmt = $pdo->prepare($sql);
-            //                     $stmt->execute([
-            //                         "id" => $lastId,
-            //                         "interest_rate" => $acc->getInterstRate(),
-            //                         "minimum_balance" => $acc->getMinBalance()
-            //                     ]);
-            //                     break;
-                
-            //                 case 'current':
-            //                     $sql = "INSERT INTO `currentaccount` (`customer_id`, `overdraft_limit`, `monthlyFee`) VALUES (:id, :overdraft_limit, :monthlyFee)";
-            //                     $stmt = $pdo->prepare($sql);
-            //                     $stmt->execute([
-            //                         "id" => $lastId,
-            //                         "overdraft_limit" => $acc->getOverdraftLimit(),
-            //                         "monthlyFee" => $acc->getMonthlyFee()
-            //                     ]);
-            //                     break;
-                
-            //                 case 'business':
-            //                     $sql = "INSERT INTO `businessaccount` (`customer_id`, `credit_limit`, `transaction_fee`) VALUES (:id, :credit_limit, :transaction_fee)";
-            //                     $stmt = $pdo->prepare($sql);
-            //                     $stmt->execute([
-            //                         "id" => $lastId,
-            //                         "credit_limit" => $acc->getCriditLimite(),
-            //                         "transaction_fee" => $acc->getTransactionFee()
-            //                     ]);
-            //                     break;
-            //             }
-                
-        
     }
     
-    public static function select($tabelNAme) {
-        global $pdo;
-        $sql = "SELECT * FROM customer JOIN $tabelNAme ON customer.customer_id=$tabelNAme.customer_id;";
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute();
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
-    }
+
 }
 ?>

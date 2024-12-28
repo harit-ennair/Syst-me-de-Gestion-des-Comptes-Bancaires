@@ -1,19 +1,4 @@
-<!-- 
-class SavingsAccount extends account
-{
-    protected $interestRate;
 
-
-
-    public function __construct($name, $email, $balance, $interestRate)
-    {
-        
-        parent::__construct($name, $email, $balance);
-
-       
-        $this->interestRate = $interestRate;
-    }
-} -->
 <?php
 include_once(__DIR__  . '/account.php');
 

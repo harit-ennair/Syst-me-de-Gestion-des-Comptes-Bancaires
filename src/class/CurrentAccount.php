@@ -1,22 +1,4 @@
 
-<!-- 
-// class CurrentAccount extends account
-// {
-//     protected $overdraftLimit;
-
-
-//     public function __construct($name, $email, $balance, $overdraftLimit)
-//     {
-        
-//         parent::__construct($name, $email, $balance);
-
-       
-//         $this->overdraftLimit = $overdraftLimit;
-//     }
-// }
-//  -->
-
-
 
 <?php
 include_once(__DIR__  . '/account.php');

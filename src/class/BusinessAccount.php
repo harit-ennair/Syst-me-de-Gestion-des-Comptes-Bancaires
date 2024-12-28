@@ -1,21 +1,3 @@
-<!-- ?php -->
-
-
-<!-- // class BusinessAccount extends Account
-// {
-//     protected $transactionFee;
-
-//     public function __construct($name, $email, $balance, $transactionFee)
-//     {
-        
-//         parent::__construct($name, $email, $balance);
-
-       
-//         $this->transactionFee = $transactionFee;
-//     }
-// }  -->
-
-
 
 
 

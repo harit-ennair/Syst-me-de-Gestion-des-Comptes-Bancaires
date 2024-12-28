@@ -68,9 +68,7 @@
 
     }
 
+    header('Location:http://localhost/Syst%c3%a8me%20de%20Gestion%20des%20Comptes%20Bancaires/index.php');
+    
+    ?>
 
-
-
-
-
-?>
